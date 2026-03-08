@@ -12,12 +12,13 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "lint": "yarn typecheck && yarn format && eslint .",
+    "lint": "yarn typecheck && yarn format && yarn eslint",
+    "eslint": "eslint --fix .",
     "format": "prettier --write .",
+    "typecheck": "tsc",
     "//update:yarn": "Updates packageManager field",
     "update:yarn": "corepack use yarn@latest",
-    "update": "node scripts/update.mts",
-    "typecheck": "tsc"
+    "update": "node scripts/update.mts"
   },
   "dependencies": {
     "@docusaurus/core": "^3.9.2",

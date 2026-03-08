@@ -9,7 +9,7 @@ const config: Config = {
   title: "Nikolai Aristov",
   tagline: "Lifestyle and Creativity",
 
-  // Icon displayed on Browser Tab
+  // Favicon shows up in Browser Tabs, not on actual page
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -19,6 +19,8 @@ const config: Config = {
 
   // Set the production url of your site here
   url: "https://nikolaiaristov.com",
+
+  trailingSlash: false,
 
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
@@ -44,6 +46,7 @@ const config: Config = {
           // Adds "edit this page" links.
           editUrl: "https://github.com/KodiStudios/aristov/tree/main/",
         },
+
         // Top Left, 2nd Item
         blog: {
           showReadingTime: false,
